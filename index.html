@@ -7,12 +7,70 @@
   <body>
     <div class="contain">
       <header class="head">
-        <h1 class="title">freeCodeCamp</h1>
-        <p id="descrition">
+        <h1 id="title">freeCodeCamp</h1>
+        <p id="description">
           Thank you for taking time to help us improve the platform
         </p>
       </header>
-      <form id="survey-form" action=""></form>
+      <form id="survey-form" action="page.html">
+        <div class="group">
+          <label for="name" id="name-label">Name</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="group">
+          <label for="email" id="email-label">Email</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="group">
+          <label for="number" id="email-label"
+            >Age <span id="option">optional</span></label
+          >
+          <input
+            type="number"
+            name="number"
+            id="number"
+            min="5"
+            max="80"
+            placeholder="Age"
+          />
+        </div>
+        <div class="group">
+          <p>Which option best describes your current role?</p>
+          <select name="dropdown" id="dropdown">
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="group">
+          <label for=""></label>
+        </div>
+        <div class="group">
+          <label for=""></label>
+        </div>
+        <div class="group">
+          <label for=""></label>
+        </div>
+        <div class="group">
+          <label for=""></label>
+        </div>
+        <div class="group">
+          <label for=""></label>
+        </div>
+      </form>
     </div>
   </body>
 </html>

@@ -48,7 +48,7 @@
         </div>
         <div class="group">
           <p>Which option best describes your current role?</p>
-          <select name="dropdown" id="dropdown">
+          <select name="role" id="dropdown" required>
             <option disabled selected value>Select current role</option>
             <option value="student">Student</option>
             <option value="job">Full Time Job</option>
@@ -56,10 +56,41 @@
           </select>
         </div>
         <div class="group">
-          <label for=""></label>
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+          <label for="definitely">
+            <input
+              type="radio"
+              name="recommend"
+              id="definitely"
+              value="definitely"
+              checked
+            />Definitely</label
+          >
+          <label for="maybe">
+            <input
+              type="radio"
+              name="recommend"
+              id="maybe"
+              value="maybe"
+            />Maybe</label
+          >
+          <label for="not-sure">
+            <input
+              type="radio"
+              name="recommend"
+              id="not-sure"
+              value="not-sure"
+            />Not sure</label
+          >
         </div>
         <div class="group">
-          <label for=""></label>
+          <p>What is your favorite feature of freeCodeCamp?</p>
+          <select name="favorite" id="feature" required>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
         </div>
         <div class="group">
           <label for=""></label>

@@ -52,6 +52,8 @@
             <option disabled selected value>Select current role</option>
             <option value="student">Student</option>
             <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="prefer-not">Prefer not to say</option>
             <option value="other">Other</option>
           </select>
         </div>
@@ -89,6 +91,7 @@
             <option disabled selected value>Select an option</option>
             <option value="challenges">Challenges</option>
             <option value="project">Project</option>
+            <option value="community">Community</option>
             <option value="open-source">Open Sources</option>
           </select>
         </div>
@@ -98,29 +101,77 @@
             <span>Check all that apply</span>
           </p>
           <label for="front-endProject"
-            ><input type="checkbox" name="" id="front-endProject" />Front-end
-            Projects</label
+            ><input
+              type="checkbox"
+              name="interest"
+              id="front-endProject"
+            />Front-end Projects</label
           >
           <label for="back-endProject"
-            ><input type="checkbox" name="" id="back-endProject" />Back-end
-            Projects</label
+            ><input
+              type="checkbox"
+              name="interest"
+              id="back-endProject"
+            />Back-end Projects</label
           >
           <label for="data-visualization"
-            ><input type="checkbox" name="" id="data-visualization" />Data
-            Visualization</label
+            ><input
+              type="checkbox"
+              name="interest"
+              id="data-visualization"
+            />Data Visualization</label
           >
-          <label for=""
-            ><input type="checkbox" name="" id="" />Challenges</label
+          <label for="challenges"
+            ><input
+              type="checkbox"
+              name="interest"
+              id="challenges"
+            />Challenges</label
           >
-          <label for=""
-            ><input type="checkbox" name="" id="" />Open Source Community</label
+          <label for="open-sourceCommunity"
+            ><input
+              type="checkbox"
+              name="interest"
+              id="open-sourceCommunity"
+            />Open Source Community</label
           >
-          <label for=""
-            ><input type="checkbox" name="" id="" />Additional Courses</label
+          <label for="gitter-helpRooms"
+            ><input
+              type="checkbox"
+              name="interest"
+              id="gitter-helpRooms"
+            />Gitter help rooms</label
+          >
+          <label for="videos"
+            ><input type="checkbox" name="interest" id="videos" />Videos</label
+          >
+          <label for="city-meetups"
+            ><input type="checkbox" name="interest" id="city-meetups" />City
+            Meetups</label
+          >
+          <label for="wiki"
+            ><input type="checkbox" name="interest" id="wiki" />Wiki</label
+          >
+          <label for="forum"
+            ><input type="checkbox" name="interest" id="forum" />Forum</label
+          >
+          <label for="additional-course"
+            ><input
+              type="checkbox"
+              name="interest"
+              id="additional-course"
+            />Additional Courses</label
           >
         </div>
         <div class="group">
-          <label for=""></label>
+          <p>Any comments or suggestions?</p>
+          <textarea
+            name="comment-suggestion"
+            id="comment"
+            cols="30"
+            rows="10"
+            placeholder="Enter your comment here..."
+          ></textarea>
         </div>
         <div class="group">
           <label for=""></label>

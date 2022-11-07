@@ -17,6 +17,7 @@
           <label for="name" id="name-label">Name</label>
           <input
             id="name"
+            class="control"
             type="text"
             name="name"
             placeholder="Enter your name"
@@ -27,6 +28,7 @@
           <label for="email" id="email-label">Email</label>
           <input
             id="email"
+            class="control"
             type="email"
             name="email"
             placeholder="Enter your email"
@@ -40,6 +42,7 @@
           <input
             type="number"
             name="number"
+            class="control"
             id="number"
             min="5"
             max="80"
@@ -48,8 +51,8 @@
         </div>
         <div class="group">
           <p>Which option best describes your current role?</p>
-          <select name="role" id="dropdown" required>
-            <option disabled selected value>Select current role</option>
+          <select name="role" id="dropdown" class="control" required>
+            <option disabled selected value="">Select current role</option>
             <option value="student">Student</option>
             <option value="job">Full Time Job</option>
             <option value="learner">Full Time Learner</option>
@@ -87,8 +90,8 @@
         </div>
         <div class="group">
           <p>What is your favorite feature of freeCodeCamp?</p>
-          <select name="favorite" id="feature" required>
-            <option disabled selected value>Select an option</option>
+          <select name="favorite" id="feature" class="control" required>
+            <option disabled selected value="">Select an option</option>
             <option value="challenges">Challenges</option>
             <option value="project">Project</option>
             <option value="community">Community</option>

@@ -137,11 +137,12 @@ button {
   -ms-border-radius: 0.2rem;
   -o-border-radius: 0.2rem;
   background-clip: padding-box;
-  transition: border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
-  -webkit-transition: border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
-  -moz-transition: border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
-  -ms-transition: border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
-  -o-transition: border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -webkit-transition: border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  -moz-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -ms-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  -o-transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 #option {
@@ -166,19 +167,50 @@ button {
 }
 
 button {
-  border: none;
-}
-
-.click {
   display: block;
+  position: relative;
   padding: 0.7rem;
   width: 100%;
-  color: inherit;
-  background: var(--text-color-4);
+  color: #333;
+  text-decoration: none;
+  border: none;
+  transition: all 0.35s;
   border-radius: 2px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
   cursor: pointer;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+  -o-transition: all 0.35s;
+}
+
+span {
+  position: relative;
+  z-index: 2;
+}
+
+button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 100%;
+  background: var(--text-color-4);
+  transition: all 0.35s;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+  -o-transition: all 0.35s;
+}
+
+button:hover {
+  color: var(--text-color-1);
+}
+
+button:hover::after {
+  width: 100%;
 }

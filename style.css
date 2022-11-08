@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 :root {
   --text-color-1: #f3f3f3;
   --text-color-2: #1b1b32;
@@ -30,8 +32,6 @@ body::before {
   background-repeat: no-repeat;
   background-position: center;
 }
-
-@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
 
 body {
   margin: 0;
@@ -74,13 +74,13 @@ p {
   margin-bottom: 0.5rem;
 }
 
-.center {
+.center-text {
   text-align: center;
 }
 
-#description {
-  font-weight: 200;
+.description {
   font-style: italic;
+  font-weight: 200;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
@@ -148,4 +148,37 @@ button {
   color: #e4e4e4;
   margin-left: 0.2rem;
   font-size: 0.8rem;
+}
+
+.radio,
+.checkbox {
+  display: inline-block;
+  min-height: 1.2rem;
+  min-width: 1.2rem;
+  margin-right: 0.6rem;
+}
+
+.suggest {
+  width: 100%;
+  padding: 0.6rem;
+  min-height: 118px;
+  resize: vertical;
+}
+
+button {
+  border: none;
+}
+
+.click {
+  display: block;
+  padding: 0.7rem;
+  width: 100%;
+  color: inherit;
+  background: var(--text-color-4);
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  cursor: pointer;
 }

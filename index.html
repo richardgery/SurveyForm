@@ -7,8 +7,8 @@
   <body>
     <div class="container">
       <header class="head">
-        <h1 id="title" class="center">freeCodeCamp Survey Form</h1>
-        <p id="description" class="center">
+        <h1 id="title" class="center-text">freeCodeCamp Survey Form</h1>
+        <p id="description" class="description center-text">
           Thank you for taking time to help us improve the platform
         </p>
       </header>
@@ -67,6 +67,7 @@
               type="radio"
               name="recommend"
               id="definitely"
+              class="radio"
               value="definitely"
               checked
             />Definitely</label
@@ -76,6 +77,7 @@
               type="radio"
               name="recommend"
               id="maybe"
+              class="radio"
               value="maybe"
             />Maybe</label
           >
@@ -84,6 +86,7 @@
               type="radio"
               name="recommend"
               id="not-sure"
+              class="radio"
               value="not-sure"
             />Not sure</label
           >
@@ -101,13 +104,14 @@
         <div class="group">
           <p>
             What would you like to see improved?
-            <span>(Check all that apply)</span>
+            <span id="option">(Check all that apply)</span>
           </p>
           <label for="front-endProject"
             ><input
               type="checkbox"
               name="interest"
               id="front-endProject"
+              class="checkbox"
             />Front-end Projects</label
           >
           <label for="back-endProject"
@@ -115,6 +119,7 @@
               type="checkbox"
               name="interest"
               id="back-endProject"
+              class="checkbox"
             />Back-end Projects</label
           >
           <label for="data-visualization"
@@ -122,6 +127,7 @@
               type="checkbox"
               name="interest"
               id="data-visualization"
+              class="checkbox"
             />Data Visualization</label
           >
           <label for="challenges"
@@ -129,6 +135,7 @@
               type="checkbox"
               name="interest"
               id="challenges"
+              class="checkbox"
             />Challenges</label
           >
           <label for="open-sourceCommunity"
@@ -136,6 +143,7 @@
               type="checkbox"
               name="interest"
               id="open-sourceCommunity"
+              class="checkbox"
             />Open Source Community</label
           >
           <label for="gitter-helpRooms"
@@ -143,26 +151,47 @@
               type="checkbox"
               name="interest"
               id="gitter-helpRooms"
+              class="checkbox"
             />Gitter help rooms</label
           >
           <label for="videos"
-            ><input type="checkbox" name="interest" id="videos" />Videos</label
+            ><input
+              type="checkbox"
+              name="interest"
+              id="videos"
+              class="checkbox"
+            />Videos</label
           >
           <label for="city-meetups"
-            ><input type="checkbox" name="interest" id="city-meetups" />City
-            Meetups</label
+            ><input
+              type="checkbox"
+              name="interest"
+              id="city-meetups"
+              class="checkbox"
+            />City Meetups</label
           >
           <label for="wiki"
-            ><input type="checkbox" name="interest" id="wiki" />Wiki</label
+            ><input
+              type="checkbox"
+              name="interest"
+              id="wiki"
+              class="checkbox"
+            />Wiki</label
           >
           <label for="forum"
-            ><input type="checkbox" name="interest" id="forum" />Forum</label
+            ><input
+              type="checkbox"
+              name="interest"
+              id="forum"
+              class="checkbox"
+            />Forum</label
           >
           <label for="additional-course"
             ><input
               type="checkbox"
               name="interest"
               id="additional-course"
+              class="checkbox"
             />Additional Courses</label
           >
         </div>
@@ -171,11 +200,12 @@
           <textarea
             name="comment-suggest"
             id="comment"
+            class="suggest"
             placeholder="Enter your comment here..."
           ></textarea>
         </div>
         <div class="group">
-          <button id="submit" type="submit">Submit</button>
+          <button id="submit" type="submit" class="click">Submit</button>
         </div>
       </form>
     </div>
